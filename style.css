@@ -1,0 +1,123 @@
+:root {
+    --main-color: #d0a062;
+    font-size: 16px;
+}
+.back_main_color{
+    background-color: var(--main-color);
+}
+a{
+    cursor: pointer;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f1f3f5;
+    font-family: 'HarmonyOS Sans SC', 'Source Han Sans SC', 'Noto Sans CJK SC',
+    'HanHei SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui,
+    ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+}
+.main_navigation{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+.main_navigation_container{
+    height: 4rem;
+    padding: 0 min(8rem, 8vw);
+    overflow: hidden;
+    background-color: #f1f3f5;
+    backdrop-filter: blur(20px) saturate(200%);
+}
+.main_navigation_container img{
+    height: 100%;
+}
+.main_nav{
+    position: absolute;
+    top: 0;
+    right: min(8rem, 8vw);
+    height: 100%;
+    display: inline-flex;
+}
+.main_nav ul{
+    margin: 0;
+    height: 100%;
+}
+.main_nav li{
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    list-style: none;
+    margin: 0 1rem;
+    line-height: 4rem;
+}
+.main_nav li:after{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    display: block;
+    margin-top: -2px;
+    height: 2px;
+    width: 0;
+    background: #000;
+    transition: width .36s;
+    text-align: center;
+}
+.main_nav li:hover:after{
+    width: 100%;
+}
+.content{
+    padding: 2rem 6rem;
+}
+.content:first-of-type{
+    padding-top: 6rem;
+}
+.content_container{
+    position: relative;
+    width: 100%;
+    height: min(42rem, 80vh);
+    background-image: url("./images/banner.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+}
+.content_main{
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.content_main *{
+    margin: 0;
+}
+.content_main p{
+    font-size: 2rem;
+}
+.content_main h2{
+    font-size: 4rem;
+}
+.content_main a{
+    position: absolute;
+    background-color: white;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 4rem;
+    color: #000;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position: right;
+    padding: 1rem 2rem;
+    transition: padding .24s ease-in-out;
+}
+.content_main a:hover{
+    background-image: url("./images/arrow.svg");
+    padding: 1rem 2.7rem 1rem 2rem;
+}
