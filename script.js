@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             banner_container.style.opacity = `${1.6 - scrollRatio * 1.6}`;
             banner_container.style.transform = `scale(${1 - scrollRatio * 0.12})`;
+            banner_container.style.filter = `blur(${scrollRatio * 16}px)`;
             about.style.marginTop = `${- scrollRatio * 16}rem`;
         }
     });

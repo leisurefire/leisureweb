@@ -1,5 +1,5 @@
 :root {
-    --main-color: #d0a062;
+    --main-color: rgb(216,119, 57);
     font-size: 16px;
 }
 .back_main_color{
@@ -80,11 +80,11 @@ body{
     position: relative;
     width: 100%;
     height: min(42rem, 80vh);
-    background-image: url("./images/banner.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 2rem;
+    background-color: #fff;
 }
 .content_main{
     position: absolute;
@@ -92,7 +92,7 @@ body{
     top: 4rem;
     margin: 0;
     padding: 0;
-    color: white;
+
 }
 .content_main *{
     margin: 0;
@@ -104,9 +104,9 @@ body{
     font-size: 4rem;
 }
 .content_main a{
-    position: absolute;
+    position: relative;
     background-color: white;
-    margin-top: 1rem;
+    top: 2rem;
     font-size: 1rem;
     border-radius: 4rem;
     color: #000;
@@ -120,4 +120,54 @@ body{
 .content_main a:hover{
     background-image: url("./images/arrow.svg");
     padding: 1rem 2.7rem 1rem 2rem;
+}
+#banner{
+    color: #fff;
+}
+#banner_container{
+    background-image: url("./images/banner.webp");
+}
+#about{
+    color: rgb( 52, 16,  0);
+}
+#about_container{
+    background-color: rgb(255,219,201);
+}
+
+.image-container {
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    overflow: hidden;
+    mask-image: url(#rotating-mask);
+    mask-size: 16rem 16rem;
+    transform: translateY(-50%);
+}
+
+.masked-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rotating-mask {
+    height: 100%;
+    animation: rotate 24s linear infinite;
+    transform-origin: 128px 128px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#about .image-container{
+    position: absolute;
+    float: right;
+    top: 50%;
+    right: 100px;
 }
