@@ -23,10 +23,7 @@
                     </a>
                     <nav class="main_nav">
                         <ul>
-                            <li>欢迎</li>
-                            <li>介绍</li>
-                            <li>关注</li>
-                            <li>挚友</li>
+                            <li>主页</li>
                             <li>leisure blog</li>
                         </ul>
                     </nav>
@@ -45,21 +42,46 @@
         <div id='about' class="content">
             <div id='about_container' class="content_container">
                 <div class="content_main">
-                    <p>聚焦</p>
+                    <p>leisure blog</p>
                     <h2>山河锦绣<br>映前程。</h2>
-                    <a>设计</a>
-                    <a>Code</a>
-                    <a>语言</a>
+                    <a onmouseenter="document.getElementById('about_img').src='images/design.png'">设计</a>
+                    <a onmouseenter="document.getElementById('about_img').src='images/code.png'">Code</a>
+                    <a onmouseenter="document.getElementById('about_img').src='images/lang.png'">语言</a>
                 </div>
-                <div>
-                    <div class="image-container">
-                        <img src="images/code.png" alt="Masked Image" class="masked-image">
+                <div class="image-container">
+                    <img id="about_img" src="images/design.png" alt="About me" class="masked-image">
+                </div>
+            </div>
+        </div>
+        <div id='follow' class="content">
+            <div class="content_container">
+                <div class="content_main">
+                    <p>全面关注</p>
+                    <h2>这下看懂了。</h2>
+                </div>
+                <div id="follow_block_container">
+                    <div class="follow_block" style="background-image: url('images/twitter.jpg'); background-position: left center; text-align: right;">
+                        <h2>X</h2>
+                        <p>尽是新鲜事</p>
+                    </div>
+                    <div class="follow_block" style="background-image: url('images/2233.jpg'); background-position: center bottom; text-align: center;">
+                        <h2>哔哩哔哩</h2>
+                        <p>你所热爱的，就是你的生活</p>
                     </div>
                 </div>
             </div>
         </div>
-
         <footer>
+            <p>主页</p>
+            <div>
+                <p>balabala</p>
+            </div>
+            <div>
+                <p>dilidili</p>
+            </div>
+            <div>
+                <p>pilipala</p>
+            </div>
         </footer>
     </main>
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px">

@@ -130,10 +130,9 @@ body{
 #about{
     color: rgb( 52, 16,  0);
 }
-#about_container{
+#about .content_container, #follow .content_container{
     background-color: rgb(255,219,201);
 }
-
 .image-container {
     position: absolute;
     width: 16rem;
@@ -170,4 +169,56 @@ body{
     float: right;
     top: 50%;
     right: 100px;
+}
+
+#about_container{
+    height: min(32rem, 80vh);
+}
+#follow .content_container{
+    min-height: 45rem;
+}
+#follow .content_main{
+    color: rgb( 52, 16,  0);
+}
+#follow #follow_block_container{
+    position: absolute;
+    top: 14rem;
+    left: 4rem;
+    right: 4rem;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+.follow_block{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-image: url("images/2233.jpg");
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 2rem;
+    height: 18rem;
+    overflow: hidden;
+}
+.follow_block:hover:after{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.follow_block:first-child{
+    top: 12rem;
+}
+.follow_block:nth-child(2n + 1){
+    left: 4rem;
+}
+.follow_block:nth-child(2n){
+    left: 8rem;
+}
+.follow_block h2{
+    font-size: 2rem;
+    margin: 0;
+}
+footer{
+    background-color: white;
+    min-height: 45rem;
+    width: 100%;
 }
